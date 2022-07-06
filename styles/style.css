@@ -8,16 +8,27 @@
   --gray: #b6b6b6;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
+  font-family: "Gantari", sans-serif;
 }
 
-body{
-    background-color: var(--white);
+a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+  background-color: var(--white);
 }
