@@ -1,0 +1,23 @@
+:root {
+  --primal: #f1f6f9;
+  --Blue: #14274e;
+  --Blue2: #394867;
+  --GBlue: #9ba4b4;
+  --black: #1e1e1e;
+  --white: #f3f3f3;
+  --gray: #b6b6b6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--white);
+}
