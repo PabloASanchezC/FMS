@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FMS</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/landinPage/styles/style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,13 +17,19 @@
   <body>
     <header>
       <div class="container">
-        <img src="/landinPage/assets/cropped-Logo.png" alt="" class="logo" />
+        <div class="logo"></div>
         <nav>
           <ul>
             <li><a href="#nosotros">Quiénes somos</a></li>
             <li><a href="#diferenciadores">Qué nos distingue</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#">Tienda</a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://fms.saiweb.mx:8080/saimovil/DefaultE.aspx"
+                >Tienda</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -33,56 +39,108 @@
         Comercializadora <br />
         FMS
       </h1>
-      <form action="">
-        <button onclick="">Compra ahora!</button>
-      </form>
+      <button ><a target="_blank" href="https://fms.saiweb.mx:8080/saimovil/DefaultE.aspx">Compra ahora!</a></button>
     </section>
     <section id="nosotros">
-      <h2>Nuestra historia</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quae
-        quisquam assumenda ipsum, eaque, nam non illo tempora accusantium unde
-        sint numquam eius cumque iusto. Dicta nam itaque perspiciatis quae?
-      </p>
-    </section>
-    <section id="diferenciadores">
-      <h2>Nuestros diferenciadores</h2>
-      <ul>
-        <li>
-          <p>
-            🔵​​ Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Molestiae, laborum? Omnis, temporibus vero, voluptates libero
-          </p>
-        </li>
-        <li>
-          <p>
-            🔵​​ Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Molestiae, laborum? Omnis, temporibus vero, voluptates libero
-          </p>
-        </li>
-        <li>
-          <p>
-            ​🔵​ Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Molestiae, laborum? Omnis, temporibus vero, voluptates libero
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section id="contacto">
       <div class="container">
-        <h2>Contáctanos</h2>
-        <ul>
-            <li>Teléfono:</li>
-            <li>Correo:</li>
-            <li></li>
-        </ul>
-        <form action="">
-          <label for="correo">Correo:</label>
-          <input type="email" name="correo" id="correo" placeholder="correo@ejemplo.com" />
-          <label for="telefono">telefono</label>
-          <input type="tel" name="telefono" id="telefono" placeholder="XX-XXXX-XXXX">
-        </form>
+        <div class="img-container"></div>
+        <h2>Nuestra historia</h2>
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, laborum similique quos quo corrupti ex non, tenetur consectetur nam et doloribus ab? Saepe soluta minima nesciunt cupiditate ipsam natus nam!
+         Vero, praesentium similique. Numquam sint maiores quasi odit ab dolorem tempore, amet rem, debitis non nulla dolor facere nisi recusandae praesentium, aperiam aut provident reprehenderit ea ut necessitatibus obcaecati voluptatibus.
+         Reiciendis expedita dolores quisquam qui. Aut placeat illum praesentium iusto impedit ratione molestias? Aperiam placeat non neque possimus id excepturi commodi inventore, nam fugiat asperiores delectus dignissimos recusandae deserunt doloremque.
+         Magnam, modi provident earum quia maiores eum nesciunt esse fugiat alias impedit expedita id et voluptates dolore ad minus odio at natus soluta inventore aliquam ipsam quisquam corrupti autem? Iusto?
+         Minima voluptatum nisi accusamus, amet eos laudantium id temporibus, enim eaque perspiciatis aliquid. Repellat nostrum ad dolores laboriosam est aliquid molestiae placeat. Quas, expedita! Neque distinctio odio ipsam quia veritatis?
+        </p>
       </div>
     </section>
+    <section id="diferenciadores">
+      <div class="container">
+        <h2>Nuestros diferenciadores</h2>
+        <div class="card">
+          <h3>Precio</h3>
+          <p>🔵Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla consequatur, hic quos dicta perferendis deleniti ipsam dolorum, sed omnis molestiae tempore, rem eaque in aut possimus! Inventore, laborum totam?</p>
+        </div>
+        <div class="card">
+          <h3>Inventario</h3>
+          <p>🔵Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla consequatur, hic quos dicta perferendis deleniti ipsam dolorum, sed omnis molestiae tempore, rem eaque in aut possimus! Inventore, laborum totam?</p>
+        </div>
+        <div class="card">
+          <h3>Atención al cliente</h3>
+          <p>🔵Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla consequatur, hic quos dicta perferendis deleniti ipsam dolorum, sed omnis molestiae tempore, rem eaque in aut possimus! Inventore, laborum totam?</p>
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+        <div class="container">
+          <h2>Contáctanos</h2>
+          <ul>
+            <li>Teléfono:</li>
+            <li>Correo:</li>
+          </ul>
+          <h3>O mandanos tus datos y nosotros te contactaremos</h3>
+          <form action="">
+            <input
+              id="nombre"
+              class="input-style"
+              type="text"
+              placeholder="Nombre*"
+              name="nombre"
+              value=""
+              maxlength="50"
+              required=""
+              oninvalid="this.setCustomValidity('Ayúdanos llenando este campo obligatorio')"
+              oninput="setCustomValidity('')"
+            />
+            <input
+              id="telefono"
+              class="input-style"
+              type="text"
+              placeholder="Teléfono*"
+              name="telefono"
+              value=""
+              maxlength="15"
+              required=""
+              oninvalid="this.setCustomValidity('Ayúdanos llenando este campo obligatorio')"
+              oninput="setCustomValidity('')"
+            />
+            <input
+              id="email"
+              class="input-style"
+              type="email"
+              placeholder="E-mail*"
+              name="email"
+              value=""
+              maxlength="50"
+              required=""
+            />
+            <input
+              id="asunto"
+              class="input-style"
+              type="text"
+              placeholder="Asunto*"
+              name="asunto"
+              value=""
+              maxlength="50"
+              required=""
+              oninvalid="this.setCustomValidity('Ayúdanos llenando este campo obligatorio')"
+              oninput="setCustomValidity('')"
+            />
+            <button
+              id="myBtn"
+              class="btn-block bg-awards contacto"
+              type="submit"
+              name="button"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy;FMS 2022</p>
+      </div>
+    </footer>
   </body>
 </html>
