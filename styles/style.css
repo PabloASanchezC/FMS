@@ -14,10 +14,15 @@
   box-sizing: border-box;
 }
 
+.material-icons-outlined.md-18 {
+  font-size: 18px;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Gantari", sans-serif;
   color: var(--black);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -89,7 +94,7 @@ header .container {
   text-align: center;
 }
 
-header .logo {
+.logo {
   width: 100px;
   height: 100px;
   background-image: url(/assets/cropped-Logo.png);
@@ -99,10 +104,23 @@ header .logo {
   margin: 20px;
 }
 
-header li {
+li {
   padding-bottom: 4px;
 }
 
+.break {
+  position: absolute;
+  width: 5px;
+  top: 640px;
+}
+
+#break2 {
+  top: 1340px;
+}
+
+#break3 {
+  top: 1890px;
+}
 #hero {
   display: flex;
   flex-direction: column;
@@ -122,6 +140,10 @@ header li {
   color: var(--primal);
 }
 
+#hero a:hover {
+  color: var(--primal);
+}
+
 #nosotros .container {
   text-align: justify;
   padding: 120px 20px;
@@ -134,17 +156,98 @@ header li {
 
 #diferenciadores .container {
   text-align: justify;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 #diferenciadores .card {
   border-radius: 8px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
-  -1px -1px 10px rgba(255, 255, 255, 0.5);
+    -1px -1px 10px rgba(255, 255, 255, 0.5);
   padding: 0 16px;
 }
 
 #diferenciadores p {
   margin-bottom: 20px;
   padding-bottom: 8px;
+}
+
+#contacto {
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+#contacto ul {
+  margin-bottom: 40px;
+}
+
+#contacto li {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+#contacto .form {
+  background-color: var(--gray);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+    -1px -1px 10px rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+}
+
+#contacto .input-style {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--Blue);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: 60%;
+}
+
+#contacto .input-style::placeholder {
+  color: var(--Blue2);
+}
+#contacto .input-style:focus-visible {
+  outline: none;
+}
+
+footer {
+  background-color: var(--Blue);
+  height: 200px;
+  border-top: 10px solid var(--Blue2);
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  height: 100%;
+}
+
+footer .redes {
+  display: flex;
+  width: 160px;
+  justify-content: space-evenly;
+}
+
+footer svg {
+  fill: var(--primal);
+}
+
+footer p {
+  color: var(--primal);
+}
+
+footer .logo {
+  background-image: url(/assets/cropped-Logow2.png);
+  margin: 10px;
 }
