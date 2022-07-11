@@ -186,6 +186,11 @@ li {
   font-size: 1.8rem;
 }
 
+#contacto .mapa {
+  margin: 20px auto;
+
+}
+
 #contacto .form {
   background-color: var(--gray);
   padding: 12px;
