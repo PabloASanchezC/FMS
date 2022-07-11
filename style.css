@@ -14,6 +14,29 @@
   box-sizing: border-box;
 }
 
+.btn-whatsapp {
+  background-image: url(https://image.similarpng.com/thumbnail/2021/10/Whatsapp-icon-design-on-transparent-background-PNG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  z-index: 2;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.btn-whatsapp:hover {
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+  box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+  transition-duration: 1s;
+}
+
 .material-icons-outlined.md-18 {
   font-size: 18px;
 }
@@ -111,15 +134,15 @@ li {
 .break {
   position: absolute;
   width: 5px;
-  top: 640px;
+  top: 820px;
 }
 
 #break2 {
-  top: 1340px;
+  top: 1580px;
 }
 
 #break3 {
-  top: 1890px;
+  top: 2400px;
 }
 #hero {
   display: flex;
@@ -182,13 +205,17 @@ li {
 
 #contacto li {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   font-size: 1.8rem;
+}
+
+#contacto ul :nth-child(3) span {
+  align-self: flex-start;
+  padding-top: 4px;
 }
 
 #contacto .mapa {
   margin: 20px auto;
-
 }
 
 #contacto .form {
@@ -237,7 +264,10 @@ footer .container {
   text-align: center;
   height: 100%;
 }
-
+footer .logo a {
+  width: 20px;
+  height: 20px;
+}
 footer .redes {
   display: flex;
   width: 160px;

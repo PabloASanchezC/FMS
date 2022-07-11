@@ -57,3 +57,37 @@ header ul li {
   width: 333px;
   border-radius: 2px;
 }
+
+#diferenciadores .container {
+  display: grid;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "card1 card2 card3";
+  gap: 50px;
+}
+
+#diferenciadores .container h2 {
+  grid-area: titulo;
+}
+
+#contacto .container {
+  /* margin: 0 20px; */
+}
+
+#contacto .mapa {
+  margin: 0px 0px 40px;
+}
+
+footer .container {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer .redes {
+  width: 200px;
+  justify-content: space-between;
+}
+
+footer .redes svg {
+  transform: scale(150%);
+}
