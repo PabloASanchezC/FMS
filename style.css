@@ -142,8 +142,13 @@ li {
 }
 
 #break3 {
-  top: 2400px;
+  top: 2300px;
 }
+
+#break4 {
+  top: 3900px;
+}
+
 #hero {
   display: flex;
   flex-direction: column;
@@ -194,7 +199,106 @@ li {
   padding-bottom: 8px;
 }
 
+#cosas {
+  border-bottom: 10px solid var(--GBlue);
+}
+
+#cosas .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+#cosas .grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+#cosas a {
+  color: var(--primal);
+}
+
+#cosas .producto {
+  background-color: var(--Blue2);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(https://www.ro-des.com/wp-content/uploads/2014/04/Filtro-de-aceite-.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  transition-duration: 500ms;
+  transition-property: all;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#cosas .grid :nth-child(2) .producto {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://brr.mx/wp-content/uploads/2021/03/rodamientos-y-cojinetes-portada-min.jpg);
+}
+
+#cosas .grid :nth-child(3) .producto {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://ae04.alicdn.com/kf/HTB1YylDbcfrK1RkSmLyq6xGApXa5.jpg);
+}
+
+#cosas .grid :nth-child(4) .producto {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://www.prolifttoyota.com/wp-content/uploads/2016/05/sp_Brake4CCOBpart2eps.jpg);
+}
+
+#cosas .grid :nth-child(5) .producto {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://store.intellaliftparts.com/blog/wp-content/uploads/2016/06/forks-006.jpg);
+}
+
+#cosas .grid :nth-child(6) .producto {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://isteam.wsimg.com/ip/bd956bab-dc5d-4c2b-8e73-f54d280f118c/estandar%20new%20line%203%20t.jpg/:/rs=w:1200,h:1200);
+}
+
+#cosas .producto:hover {
+  background-size: 200%;
+}
+#cosas a:hover {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+
 #contacto {
+  background-color: var(--Blue2);
+  color: var(--primal);
   margin: 0 auto;
   padding: 80px 20px;
 }
@@ -220,6 +324,7 @@ li {
 
 #contacto .form {
   background-color: var(--gray);
+  color: var(--Blue);
   padding: 12px;
   border-radius: 8px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
@@ -253,7 +358,7 @@ li {
 footer {
   background-color: var(--Blue);
   height: 200px;
-  border-top: 10px solid var(--Blue2);
+  border-top: 10px solid var(--GBlue);
 }
 
 footer .container {

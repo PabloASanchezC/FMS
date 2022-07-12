@@ -28,8 +28,13 @@ header ul li {
 }
 
 #break3 {
-  top: 1890px;
+  top: 1850px;
 }
+
+#break4 {
+  top: 2450px;
+}
+
 #hero {
   margin-top: 140px;
 }
@@ -68,6 +73,14 @@ header ul li {
 
 #diferenciadores .container h2 {
   grid-area: titulo;
+}
+
+#cosas .grid {
+  max-width: 780px;
+}
+
+#cosas .producto {
+  margin: 10px 30px ;
 }
 
 #contacto .container {
