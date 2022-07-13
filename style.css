@@ -323,7 +323,7 @@ li {
 }
 
 #contacto .form {
-  background-color: var(--gray);
+  background-color: var(--primal);
   color: var(--Blue);
   padding: 12px;
   border-radius: 8px;
